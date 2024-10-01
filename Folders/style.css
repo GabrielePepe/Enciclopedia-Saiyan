@@ -104,12 +104,12 @@ main {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: calc(25% - 20px); /* Regola la larghezza delle card */
-    max-width: 200px; /* Imposta una larghezza massima per le card */
-    height: 318px;
+    width: calc(33.33% - 20px); /* Cambia la larghezza per essere più flessibile */
+    max-width: 220px; /* Leggermente più larga */
+    height: auto; /* Rimuove l'altezza fissa */
     transition: transform 0.2s;
+    margin: 10px; /* Spazio attorno a ciascuna card */
 }
-
 .card:hover {
     transform: translateY(-10px);
 }
