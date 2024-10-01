@@ -5,3 +5,7 @@ document.getElementById('read-more-btn').addEventListener('click', function() {
 document.getElementById('read-more-btn-2').addEventListener('click', function() {
     window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/Folders/DBAFvol2.html';
 });
+
+document.getElementById('read-more-btn-3').addEventListener('click', function() {
+    window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/Folders/DBAFvol3.html';
+});
