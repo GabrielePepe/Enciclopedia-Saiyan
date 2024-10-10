@@ -32,5 +32,5 @@ document.getElementById('menu-btn1').addEventListener('click', function() {
 });
 
 document.getElementById('menu-btn3').addEventListener('click', function() {
-    window.location.href = '/Base-html archive/index-base.html';
+    window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/Base-html%20archive/index-base.html';
 });
