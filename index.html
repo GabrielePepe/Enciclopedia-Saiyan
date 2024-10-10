@@ -7,53 +7,72 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/title.png" alt="Logo" class="header-image">
-    </header>
 
-    <main class="grid-container">
-        <div class="card">
-            <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/000.jpg" alt="Copertina Rivista 1">
-            <div class="card-content">
-                <h2>Dragon Ball AF (Toyble)</h2>
-                <p class="subtitle">Toyble</p>
-                <button id="read-more-btn">Leggi di più</button>
-            </div>
-        </div>
-        
-        <div class="card">
-            <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/001.png" alt="Copertina Rivista 1">
-            <div class="card-content">
-                <h2>Dragon Ball After Broly</h2>
-                <p class="subtitle">Asshie</p>
-                <button id="read-more-btn-2">Leggi di più</button>
-            </div>
-        </div>
+    <!-- Pulsante del menù (con icona) -->
+    <div class="menu-icon" id="menu-icon">
+        &#9776; <!-- Icona del menù (hamburger) -->
+    </div>
 
-        <div class="card"> <!-- Chiuso correttamente il div -->
-            <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/002.jpg" alt="Copertina Rivista 1">
-            <div class="card-content">
-                <h2>Dragon Ball Bardack After</h2>
-                <p class="subtitle">Young Jijii</p>
-                <button id="read-more-btn-3">Leggi di più</button>
-            </div>
-        </div> <!-- Fine del terzo div card -->
-    </main>
-
-    <footer>
-        <div class="footer-container">
-            <div class="collaboration">
-                <h2>2024 - In collaborazione con: Mirai Channel95</h2>
-                <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/unnamed.jpg" alt="Collaborazione" class="footer-collab-logo">
-                <a href="https://www.instagram.com/miraichannel95/?hl=it" target="_blank">
-                    <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/igico.png" alt="Instagram" class="footer-logo">
-                </a>
-                <a href="https://www.youtube.com/@Mangaanimated95" target="_blank">
-                    <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/ytico.png" alt="YouTube" class="footer-logo">
-                </a>
-            </div>
+    <!-- Menù fullscreen nascosto inizialmente -->
+    <div class="fullscreen-menu" id="fullscreen-menu">
+        <button class="close-btn" id="close-btn">&times;</button>
+        <div class="menu-content">
+            <button class="menu-btn1" id="menu-btn1">Home</button>
+            <button class="menu-btn2" id="menu-btn2">Chi siamo</button>
+            <button class="menu-btn3" id="menu-btn3">Archivio base-html</button>
+            <button class="menu-btn4" id="menu-btn4">Contattaci</button>
         </div>
-    </footer>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/title.png" alt="Logo" class="header-image">
+        </header>
+
+        <main class="grid-container">
+            <div class="card">
+                <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/000.jpg" alt="Copertina Rivista 1">
+                <div class="card-content">
+                    <h2>Dragon Ball AF (Toyble)</h2>
+                    <p class="subtitle">Toyble</p>
+                    <button id="read-more-btn">Leggi di più</button>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/001.png" alt="Copertina Rivista 1">
+                <div class="card-content">
+                    <h2>Dragon Ball After Broly</h2>
+                    <p class="subtitle">Asshie</p>
+                    <button id="read-more-btn-2">Leggi di più</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/002.jpg" alt="Copertina Rivista 1">
+                <div class="card-content">
+                    <h2>Dragon Ball Bardack After</h2>
+                    <p class="subtitle">Young Jijii</p>
+                    <button id="read-more-btn-3">Leggi di più</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="collaboration">
+                    <h2>2024 - In collaborazione con: Mirai Channel95</h2>
+                    <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/unnamed.jpg" alt="Collaborazione" class="footer-collab-logo">
+                    <a href="https://www.instagram.com/miraichannel95/?hl=it" target="_blank">
+                        <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/igico.png" alt="Instagram" class="footer-logo">
+                    </a>
+                    <a href="https://www.youtube.com/@Mangaanimated95" target="_blank">
+                        <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/ytico.png" alt="YouTube" class="footer-logo">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
     
     <script src="script.js"></script> 
 </body>
