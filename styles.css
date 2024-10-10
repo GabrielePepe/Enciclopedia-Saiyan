@@ -6,25 +6,25 @@ html, body {
     font-family: Poppins, Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    box-sizing: border-box; /* Assicura il corretto calcolo delle dimensioni */
+    box-sizing: border-box;
 }
 
 * {
-    box-sizing: inherit; /* Include box-sizing in tutti gli elementi */
+    box-sizing: inherit;
 }
 
-body {
+.main-content {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     min-height: 100vh;
 }
 
 header {
-    background-color: #ff9200; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+    background-color: #ff9200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 10px 0;
 }
 
@@ -38,9 +38,9 @@ main {
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centra le card */
-    gap: 20px; /* Spazio tra le card */
-    margin-bottom: 60px; /* Aggiungi margine inferiore per spostare il footer più in basso */
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 60px;
 }
 
 .card {
@@ -48,9 +48,9 @@ main {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: calc(25% - 20px); /* Regola la larghezza delle card */
-    max-width: 220px; /* Imposta una larghezza massima per le card */
-    display: flex; 
+    width: calc(25% - 20px);
+    max-width: 220px;
+    display: flex;
     flex-direction: column;
     transition: transform 0.2s;
 }
@@ -60,7 +60,7 @@ main {
 }
 
 .card img {
-    width: 100%; /* Immagine a larghezza piena */
+    width: 100%;
     height: auto;
     margin: 0 auto;
     margin-top: 20px;
@@ -105,87 +105,179 @@ button:hover {
 }
 
 footer {
-    padding: 10px 20px; /* Mantieni il padding attuale */
+    padding: 10px 20px;
     background-color: #ff9200;
     color: white;
 }
 
 .footer-container {
     display: flex;
-    justify-content: center; /* Centra gli elementi del footer */
+    justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    gap: 20px; /* Spazio tra gli elementi del footer */
+    gap: 20px;
 }
 
 .collaboration {
     display: flex;
     align-items: center;
-    gap: 15px; /* Spazio tra gli elementi */
+    gap: 15px;
 }
 
 .footer-collab-logo {
-    width: 40px; /* Dimensione logo collaborazione */
-    height: 40px; /* Dimensione logo collaborazione */
+    width: 40px;
+    height: 40px;
     object-fit: contain;
 }
 
 .footer-logo {
-    width: 30px; /* Dimensione logo Instagram/YouTube */
-    height: 30px; /* Dimensione logo Instagram/YouTube */
+    width: 30px;
+    height: 30px;
     object-fit: contain;
 }
 
-/* Media Queries */
-@media (max-width: 1200px) {
-    .card {
-        width: calc(33.33% - 20px); /* Le card occupano il 33% su schermi più piccoli */
-    }
+/* Stili del menù a schermo intero */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1000;
 }
 
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+  }
+
+.fullscreen-menu.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+.fullscreen-menu .menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-btn1 {
+    width: 250px; /* Pulsanti più grandi */
+    padding: 20px;
+    font-size: 20px; /* Dimensione testo pulsanti aumentata */
+    background-color: #ff9200;
+    color: white;
+    border: none;
+    border-radius: 30px; /* Pulsanti più stondati */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-btn2 {
+    width: 250px; /* Pulsanti più grandi */
+    padding: 20px;
+    font-size: 20px; /* Dimensione testo pulsanti aumentata */
+    background-color: #ff9200;
+    color: white;
+    border: none;
+    border-radius: 30px; /* Pulsanti più stondati */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-btn3 {
+    width: 250px; /* Pulsanti più grandi */
+    padding: 20px;
+    font-size: 20px; /* Dimensione testo pulsanti aumentata */
+    background-color: #ff9200;
+    color: white;
+    border: none;
+    border-radius: 30px; /* Pulsanti più stondati */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-btn4 {
+    width: 250px; /* Pulsanti più grandi */
+    padding: 20px;
+    font-size: 20px; /* Dimensione testo pulsanti aumentata */
+    background-color: #ff9200;
+    color: white;
+    border: none;
+    border-radius: 30px; /* Pulsanti più stondati */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #e68900;
+    transform: scale(1.05);
+}
+
+/* Pulsante per chiudere il menù */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
     .header-image {
-        max-width: 50%;  /* Riduci la larghezza del logo su tablet */
-    }
-
-    main {
-        justify-content: center; /* Mantieni gli elementi centrati */
-        gap: 10px; /* Riduci il gap tra le card */
+        max-width: 50%;
     }
 
     .card {
-        width: calc(50% - 10px); /* Le card occupano il 50% della larghezza su tablet */
+        width: calc(50% - 10px);
     }
 }
 
 @media (max-width: 480px) {
     .header-image {
-        max-width: 70%;  /* Riduci la larghezza del logo su mobile */
+        max-width: 70%;
     }
 
     .card {
-        width: 100%; /* Le card occupano l'intera larghezza su schermi piccoli */
+        width: 100%;
     }
 
     .card img {
-        width: 100%; /* Immagine a larghezza piena nelle card su mobile */
+        width: 100%;
     }
 
     .card-content {
-        padding: 15px;  /* Riduci il padding all'interno delle card */
+        padding: 15px;
     }
 
     button {
-        width: 100%;  /* I pulsanti occupano tutta la larghezza su mobile */
+        width: 100%;
     }
 
     .footer-container {
         flex-direction: column;
-        gap: 10px; /* Riduci lo spazio nel footer */
+        gap: 10px;
     }
 
     .footer-collab-logo, .footer-logo {
-        width: 30px; /* Riduci ulteriormente le icone del footer */
-        height: 30px; /* Riduci ulteriormente le icone del footer */
+        width: 30px;
+        height: 30px;
     }
 }
