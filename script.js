@@ -22,6 +22,10 @@ document.getElementById('read-more-btn-2').addEventListener('click', function() 
     window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/Folders/DBAFvol2.html';
 });
 
+document.getElementById('read-more-btn-3').addEventListener('click', function() {
+    window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/Folders/DBAFvol3.html';
+});
+
 // Correzione: aggiunta selezione corretta per menu-btn1
 document.getElementById('menu-btn1').addEventListener('click', () => {
     window.location.href = 'https://google.com';
