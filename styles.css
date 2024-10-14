@@ -160,12 +160,12 @@ footer {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s, visibility 0.5s;
-  }
+}
 
 .fullscreen-menu.open {
     opacity: 1;
     visibility: visible;
-  }
+}
 
 .fullscreen-menu .menu-content {
     display: flex;
@@ -174,7 +174,7 @@ footer {
     gap: 20px;
 }
 
-.menu-btn1 {
+.menu-btn1, .menu-btn2, .menu-btn3, .menu-btn4 {
     width: 250px; /* Pulsanti più grandi */
     padding: 20px;
     font-size: 20px; /* Dimensione testo pulsanti aumentata */
@@ -186,43 +186,7 @@ footer {
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.menu-btn2 {
-    width: 250px; /* Pulsanti più grandi */
-    padding: 20px;
-    font-size: 20px; /* Dimensione testo pulsanti aumentata */
-    background-color: #ff9200;
-    color: white;
-    border: none;
-    border-radius: 30px; /* Pulsanti più stondati */
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.menu-btn3 {
-    width: 250px; /* Pulsanti più grandi */
-    padding: 20px;
-    font-size: 20px; /* Dimensione testo pulsanti aumentata */
-    background-color: #ff9200;
-    color: white;
-    border: none;
-    border-radius: 30px; /* Pulsanti più stondati */
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.menu-btn4 {
-    width: 250px; /* Pulsanti più grandi */
-    padding: 20px;
-    font-size: 20px; /* Dimensione testo pulsanti aumentata */
-    background-color: #ff9200;
-    color: white;
-    border: none;
-    border-radius: 30px; /* Pulsanti più stondati */
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.menu-btn:hover {
+.menu-btn1:hover, .menu-btn2:hover, .menu-btn3:hover, .menu-btn4:hover {
     background-color: #e68900;
     transform: scale(1.05);
 }
@@ -247,6 +211,12 @@ footer {
 
     .card {
         width: calc(50% - 10px);
+    }
+
+    .close-btn {
+        top: 20px;
+        right: 10px;
+        transform: translate(-50%, 0);
     }
 }
 
@@ -279,5 +249,11 @@ footer {
     .footer-collab-logo, .footer-logo {
         width: 30px;
         height: 30px;
+    }
+
+    .close-btn {
+        top: 20px;
+        right: 10px;
+        transform: translate(-50%, 0);
     }
 }
