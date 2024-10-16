@@ -196,13 +196,20 @@ footer {
 /* Pulsante per chiudere il menù */
 .close-btn {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: 15px;
+    right: 15px; /* Allineato completamente a destra */
     font-size: 40px;
-    color: white;
+    color: #ffffff; /* Colore visibile */
     background: none;
     border: none;
     cursor: pointer;
+    outline: none; /* Rimuove l'highlight */
+    z-index: 1001; /* Resta sempre visibile */
+}
+
+.close-btn:hover,.close-btn:focus {
+    /* Nessuna transizione e nessun effetto di hover */
+    outline: none; /* Assicura che l'highlight sia rimosso anche dopo il click */
 }
 
 /* Media Queries */
@@ -210,15 +217,15 @@ footer {
     .header-image {
         max-width: 50%;
     }
-
+    
     .card {
         width: calc(50% - 10px);
     }
-
+    
     .close-btn {
         top: 20px;
-        right: 10px;
-        transform: translate(-50%, 0);
+        right: 15px; /* Manteniamo allineato a destra */
+        font-size: 35px; /* Leggermente più piccola per dispositivi più piccoli */
     }
 }
 
@@ -226,37 +233,37 @@ footer {
     .header-image {
         max-width: 70%;
     }
-
+    
     .card {
         width: 100%;
     }
-
+    
     .card img {
         width: 100%;
     }
-
+    
     .card-content {
         padding: 15px;
     }
-
+    
     button {
-        width: 100%;
+        width: 60px;
     }
-
+    
     .footer-container {
         flex-direction: column;
         gap: 10px;
     }
-
+    
     .footer-collab-logo, .footer-logo {
         width: 60%; /* Aumentiamo la dimensione per una migliore visibilità su mobile */
         height: 70%;
         border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%; /* Border-radius mantenuto */
     }
-
+    
     .close-btn {
-        top: 20px;
-        right: 10px;
-        transform: translate(-50%, 0);
+        font-size: 30px; /* Ancora più piccola su dispositivi molto piccoli */
+        top: 15px;
+        right: 15px; /* Manteniamo allineato a destra */
     }
 }
