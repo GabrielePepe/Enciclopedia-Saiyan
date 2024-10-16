@@ -131,9 +131,11 @@ footer {
     justify-content: center;
 }
 
+/* Modifica qui per le immagini del footer */
 .footer-logo, .footer-collab-logo {
-    width: 10%; /* Aumentiamo la dimensione dell'immagine */
-    height: 10%; /* Assicuriamo che sia ben visibile */
+    width: 30%; /* Utilizza il 30% della larghezza del contenitore */
+    max-width: 100px; /* Limita la larghezza massima delle immagini */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
     border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%; /* Manteniamo il border-radius */
     object-fit: cover; /* Manteniamo l'immagine centrata e riempita */
 }
@@ -212,7 +214,6 @@ footer {
 }
 
 /* Media Queries */
-/* Media Queries */
 @media (max-width: 768px) {
     .header-image {
         max-width: 50%; /* Mantiene il 50% della larghezza del contenitore */
@@ -223,6 +224,11 @@ footer {
         width: 90%; /* Utilizza il 90% della larghezza del contenitore */
         max-width: none; /* Rimuove il max-width per garantire adattamento */
         margin: 0 auto; /* Centra la card */
+    }
+
+    .footer-logo, .footer-collab-logo {
+        width: 40%; /* Aumenta leggermente su schermi più larghi */
+        max-width: 80px; /* Limita ulteriormente la larghezza */
     }
 
     .close-btn {
@@ -263,6 +269,7 @@ footer {
 
     .footer-collab-logo, .footer-logo {
         width: 90%; /* Mantiene una buona visibilità per le immagini */
+        max-width: 60px; /* Limita ulteriormente la larghezza */
         height: auto; /* Assicura che l'altezza si adatti proporzionalmente */
         border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%; /* Border-radius mantenuto */
     }
