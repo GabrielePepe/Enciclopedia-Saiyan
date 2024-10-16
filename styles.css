@@ -212,13 +212,17 @@ footer {
 }
 
 /* Media Queries */
+/* Media Queries */
 @media (max-width: 768px) {
     .header-image {
-        max-width: 50%;
+        max-width: 50%; /* Mantiene il 50% della larghezza del contenitore */
+        height: auto; /* Assicura che l'altezza si adatti proporzionalmente */
     }
 
     .card {
-        width: calc(50% - 10px);
+        width: 90%; /* Utilizza il 90% della larghezza del contenitore */
+        max-width: none; /* Rimuove il max-width per garantire adattamento */
+        margin: 0 auto; /* Centra la card */
     }
 
     .close-btn {
@@ -229,23 +233,27 @@ footer {
 
 @media (max-width: 480px) {
     .header-image {
-        max-width: 70%;
+        max-width: 70%; /* Mantiene il 70% della larghezza del contenitore */
+        height: auto; /* Assicura che l'altezza si adatti proporzionalmente */
     }
 
     .card {
-        width: 100%;
+        width: 95%; /* Utilizza il 95% della larghezza del contenitore */
+        max-width: none; /* Rimuove il max-width per garantire adattamento */
+        margin: 0 auto; /* Centra la card */
     }
 
     .card img {
-        width: 100%;
+        width: 100%; /* Assicura che l'immagine si adatti al contenitore */
+        height: auto; /* Mantiene le proporzioni dell'immagine */
     }
 
     .card-content {
-        padding: 15px;
+        padding: 15px; /* Mantiene il padding */
     }
 
     button {
-        width: 100%;
+        width: 100%; /* Mantiene il pulsante alla larghezza completa */
     }
 
     .footer-container {
@@ -254,14 +262,14 @@ footer {
     }
 
     .footer-collab-logo, .footer-logo {
-        width: 90%; /* Aumentiamo la dimensione per una migliore visibilità su mobile */
-        height: 90%;
+        width: 90%; /* Mantiene una buona visibilità per le immagini */
+        height: auto; /* Assicura che l'altezza si adatti proporzionalmente */
         border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%; /* Border-radius mantenuto */
     }
 
     .close-btn {
         width: 60px;
         height: 60px;
-        font-size: 30px; /* Leggermente più piccola su dispositivi piccoli */
+        font-size: 30px; /* Dimensione del pulsante più piccola per schermi piccoli */
     }
 }
