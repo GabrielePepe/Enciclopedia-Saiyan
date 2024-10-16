@@ -247,7 +247,7 @@ footer {
     }
 
     button {
-        width: 60px; /* Assicuriamo che il pulsante occupi tutta la larghezza */
+        width: 100%; /* Assicuriamo che il pulsante occupi tutta la larghezza */
         padding: 15px; /* Aumentiamo il padding per rendere il pulsante più grande */
         font-size: 1rem; /* Aumentiamo la dimensione del font per il pulsante */
     }
