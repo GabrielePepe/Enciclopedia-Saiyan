@@ -132,11 +132,12 @@ footer {
 }
 
 .footer-logo, .footer-collab-logo {
-    width: 10%; /* Aumentiamo la dimensione dell'immagine */
-    height: 10%; /* Assicuriamo che sia ben visibile */
-    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%; /* Manteniamo il border-radius */
-    object-fit: cover; /* Manteniamo l'immagine centrata e riempita */
+    width: 10%;
+    height: auto;
+    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%;
+    object-fit: cover;
 }
+
 
 /* Stili del menù a schermo intero */
 .menu-icon {
@@ -227,6 +228,11 @@ footer {
         right: 15px; /* Manteniamo allineato a destra */
         font-size: 35px; /* Leggermente più piccola per dispositivi più piccoli */
     }
+
+    .footer-logo, .footer-collab-logo {
+        width: 30px; /* Dimensioni più piccole per dispositivi mobili */
+        height: 30px;
+    }   
 }
 
 @media (max-width: 480px) {
@@ -257,10 +263,9 @@ footer {
         gap: 10px;
     }
 
-    .footer-collab-logo, .footer-logo {
-        width: 50%; /* Aumentiamo la dimensione per una migliore visibilità su mobile */
-        height: auto;
-        border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%; /* Border-radius mantenuto */
+    .footer-logo, .footer-collab-logo {
+        width: 25px; /* Ancora più piccolo per dispositivi molto piccoli */
+        height: 25px;
     }
 
     .close-btn {
