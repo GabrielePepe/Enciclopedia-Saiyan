@@ -105,6 +105,7 @@ button:hover {
     transform: scale(1.05);
 }
 
+/* --- FOOTER --- */
 footer {
     padding: 10px 20px;
     background-color: #ff9200;
@@ -131,10 +132,10 @@ footer {
 }
 
 .footer-logo, .footer-collab-logo {
-    width: 10%;
-    height: 10%;
-    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%;
-    object-fit: contain;
+    width: 10%; /* Aumentiamo la dimensione dell'immagine */
+    height: 10%; /* Assicuriamo che sia ben visibile */
+    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%; /* Manteniamo il border-radius */
+    object-fit: cover; /* Manteniamo l'immagine centrata e riempita */
 }
 
 /* Stili del menù a schermo intero */
@@ -248,8 +249,9 @@ footer {
     }
 
     .footer-collab-logo, .footer-logo {
-        width: 30px;
-        height: 30px;
+        width: 60%; /* Aumentiamo la dimensione per una migliore visibilità su mobile */
+        height: 70%;
+        border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%; /* Border-radius mantenuto */
     }
 
     .close-btn {
