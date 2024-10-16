@@ -131,11 +131,9 @@ footer {
     justify-content: center;
 }
 
-/* Modifica qui per le immagini del footer */
 .footer-logo, .footer-collab-logo {
-    width: 30%; /* Utilizza il 30% della larghezza del contenitore */
-    max-width: 100px; /* Limita la larghezza massima delle immagini */
-    height: auto; /* Mantiene le proporzioni dell'immagine */
+    width: 10%; /* Aumentiamo la dimensione dell'immagine */
+    height: 10%; /* Assicuriamo che sia ben visibile */
     border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%; /* Manteniamo il border-radius */
     object-fit: cover; /* Manteniamo l'immagine centrata e riempita */
 }
@@ -206,9 +204,9 @@ footer {
     border: none;
     cursor: pointer;
     outline: none; /* Rimuove l'highlight */
+    z-index: 1001; /* Resta sempre visibile */
 }
 
-/* Rimosso l'effetto di trasformazione al focus */
 .close-btn:focus {
     outline: none; /* Assicura che l'highlight sia rimosso anche dopo il click */
 }
@@ -216,50 +214,41 @@ footer {
 /* Media Queries */
 @media (max-width: 768px) {
     .header-image {
-        max-width: 50%; /* Mantiene il 50% della larghezza del contenitore */
-        height: auto; /* Assicura che l'altezza si adatti proporzionalmente */
+        max-width: 50%;
     }
 
     .card {
-        width: 90%; /* Utilizza il 90% della larghezza del contenitore */
-        max-width: none; /* Rimuove il max-width per garantire adattamento */
-        margin: 0 auto; /* Centra la card */
-    }
-
-    .footer-logo, .footer-collab-logo {
-        width: 30%; /* Aumenta leggermente su schermi più larghi */
-        max-width: 30px; /* Limita ulteriormente la larghezza */
+        width: calc(50% - 10px);
     }
 
     .close-btn {
         top: 20px;
         right: 10px;
+        transform: none; /* Rimuove la trasformazione */
     }
 }
 
 @media (max-width: 480px) {
     .header-image {
-        max-width: 70%; /* Mantiene il 70% della larghezza del contenitore */
-        height: auto; /* Assicura che l'altezza si adatti proporzionalmente */
+        max-width: 70%;
     }
 
     .card {
-        width: 95%; /* Utilizza il 95% della larghezza del contenitore */
-        max-width: none; /* Rimuove il max-width per garantire adattamento */
-        margin: 0 auto; /* Centra la card */
+        width: 100%;
     }
 
     .card img {
-        width: 100%; /* Assicura che l'immagine si adatti al contenitore */
-        height: auto; /* Mantiene le proporzioni dell'immagine */
+        width: 100%;
     }
 
     .card-content {
-        padding: 15px; /* Mantiene il padding */
+        padding: 15px;
     }
 
     button {
-        width: 100%; /* Mantiene il pulsante alla larghezza completa */
+        width: 100%; /* Assicuriamo che il pulsante occupi tutta la larghezza */
+        padding: 15px; /* Aumentiamo il padding per rendere il pulsante più grande */
+        font-size: 1rem; /* Aumentiamo la dimensione del font per il pulsante */
     }
 
     .footer-container {
@@ -268,15 +257,17 @@ footer {
     }
 
     .footer-collab-logo, .footer-logo {
-        width: 25%; /* Mantiene una buona visibilità per le immagini */
-        max-width: 25px; /* Limita ulteriormente la larghezza */
-        height: auto; /* Assicura che l'altezza si adatti proporzionalmente */
+        width: 80%; /* Aumentiamo la dimensione per una migliore visibilità su mobile */
+        height: 80%;
         border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%; /* Border-radius mantenuto */
     }
 
     .close-btn {
         width: 60px;
         height: 60px;
-        font-size: 30px; /* Dimensione del pulsante più piccola per schermi piccoli */
+        font-size: 30px; /* Leggermente più piccola su dispositivi piccoli */
+        top: 15px;
+        right: 10px; /* Margine destro ridotto per schermi piccoli */
+        transform: none; /* Rimuove la trasformazione */
     }
 }
