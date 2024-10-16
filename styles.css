@@ -207,7 +207,7 @@ footer {
     z-index: 1001; /* Resta sempre visibile */
 }
 
-.close-btn:hover,.close-btn:focus {
+.close-btn:hover, .close-btn:focus {
     /* Nessuna transizione e nessun effetto di hover */
     outline: none; /* Assicura che l'highlight sia rimosso anche dopo il click */
 }
@@ -217,11 +217,11 @@ footer {
     .header-image {
         max-width: 50%;
     }
-    
+
     .card {
         width: calc(50% - 10px);
     }
-    
+
     .close-btn {
         top: 20px;
         right: 15px; /* Manteniamo allineato a destra */
@@ -233,34 +233,36 @@ footer {
     .header-image {
         max-width: 70%;
     }
-    
+
     .card {
         width: 100%;
     }
-    
+
     .card img {
         width: 100%;
     }
-    
+
     .card-content {
         padding: 15px;
     }
-    
+
     button {
-        width: 60px;
+        width: 60px; /* Assicuriamo che il pulsante occupi tutta la larghezza */
+        padding: 15px; /* Aumentiamo il padding per rendere il pulsante più grande */
+        font-size: 1rem; /* Aumentiamo la dimensione del font per il pulsante */
     }
-    
+
     .footer-container {
         flex-direction: column;
         gap: 10px;
     }
-    
+
     .footer-collab-logo, .footer-logo {
-        width: 60%; /* Aumentiamo la dimensione per una migliore visibilità su mobile */
-        height: 70%;
+        width: 80%; /* Aumentiamo la dimensione per una migliore visibilità su mobile */
+        height: 80%;
         border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%; /* Border-radius mantenuto */
     }
-    
+
     .close-btn {
         font-size: 30px; /* Ancora più piccola su dispositivi molto piccoli */
         top: 15px;
