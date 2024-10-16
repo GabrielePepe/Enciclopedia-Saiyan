@@ -132,12 +132,11 @@ footer {
 }
 
 .footer-logo, .footer-collab-logo {
-    width: 10%;
-    height: auto;
-    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%;
-    object-fit: cover;
+    width: 10%; /* Aumentiamo la dimensione dell'immagine */
+    height: 10%; /* Assicuriamo che sia ben visibile */
+    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%; /* Manteniamo il border-radius */
+    object-fit: cover; /* Manteniamo l'immagine centrata e riempita */
 }
-
 
 /* Stili del menù a schermo intero */
 .menu-icon {
@@ -197,19 +196,18 @@ footer {
 /* Pulsante per chiudere il menù */
 .close-btn {
     position: absolute;
-    top: 15px;
-    right: 15px; /* Allineato completamente a destra */
+    top: 20px;
+    right: 15px; /* Allineata completamente a destra */
     font-size: 40px;
     color: #ffffff; /* Colore visibile */
     background: none;
     border: none;
     cursor: pointer;
     outline: none; /* Rimuove l'highlight */
-    z-index: 1001; /* Resta sempre visibile */
 }
 
-.close-btn:hover, .close-btn:focus {
-    /* Nessuna transizione e nessun effetto di hover */
+/* Rimosso l'effetto di trasformazione al focus */
+.close-btn:focus {
     outline: none; /* Assicura che l'highlight sia rimosso anche dopo il click */
 }
 
@@ -225,14 +223,8 @@ footer {
 
     .close-btn {
         top: 20px;
-        right: 15px; /* Manteniamo allineato a destra */
-        font-size: 35px; /* Leggermente più piccola per dispositivi più piccoli */
+        right: 10px;
     }
-
-    .footer-logo, .footer-collab-logo {
-        width: 30px; /* Dimensioni più piccole per dispositivi mobili */
-        height: 30px;
-    }   
 }
 
 @media (max-width: 480px) {
@@ -253,9 +245,7 @@ footer {
     }
 
     button {
-        width: 100%; /* Assicuriamo che il pulsante occupi tutta la larghezza */
-        padding: 15px; /* Aumentiamo il padding per rendere il pulsante più grande */
-        font-size: 1rem; /* Aumentiamo la dimensione del font per il pulsante */
+        width: 100%;
     }
 
     .footer-container {
@@ -263,14 +253,15 @@ footer {
         gap: 10px;
     }
 
-    .footer-logo, .footer-collab-logo {
-        width: 25px; /* Ancora più piccolo per dispositivi molto piccoli */
-        height: 25px;
+    .footer-collab-logo, .footer-logo {
+        width: 90%; /* Aumentiamo la dimensione per una migliore visibilità su mobile */
+        height: 90%;
+        border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%; /* Border-radius mantenuto */
     }
 
     .close-btn {
-        font-size: 30px; /* Ancora più piccola su dispositivi molto piccoli */
-        top: 15px;
-        right: 15px; /* Manteniamo allineato a destra */
+        width: 60px;
+        height: 60px;
+        font-size: 30px; /* Leggermente più piccola su dispositivi piccoli */
     }
 }
