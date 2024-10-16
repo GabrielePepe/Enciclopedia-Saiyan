@@ -258,8 +258,8 @@ footer {
     }
 
     .footer-collab-logo, .footer-logo {
-        width: 80%; /* Aumentiamo la dimensione per una migliore visibilità su mobile */
-        height: 80%;
+        width: 50%; /* Aumentiamo la dimensione per una migliore visibilità su mobile */
+        height: auto;
         border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%; /* Border-radius mantenuto */
     }
 
