@@ -227,8 +227,8 @@ footer {
     }
 
     .footer-logo, .footer-collab-logo {
-        width: 40%; /* Aumenta leggermente su schermi più larghi */
-        max-width: 80px; /* Limita ulteriormente la larghezza */
+        width: 30%; /* Aumenta leggermente su schermi più larghi */
+        max-width: 30px; /* Limita ulteriormente la larghezza */
     }
 
     .close-btn {
@@ -268,8 +268,8 @@ footer {
     }
 
     .footer-collab-logo, .footer-logo {
-        width: 90%; /* Mantiene una buona visibilità per le immagini */
-        max-width: 60px; /* Limita ulteriormente la larghezza */
+        width: 25%; /* Mantiene una buona visibilità per le immagini */
+        max-width: 25px; /* Limita ulteriormente la larghezza */
         height: auto; /* Assicura che l'altezza si adatti proporzionalmente */
         border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%; /* Border-radius mantenuto */
     }
