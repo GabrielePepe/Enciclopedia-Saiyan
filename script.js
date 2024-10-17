@@ -22,19 +22,19 @@ document.getElementById('read-more-btn-2').addEventListener('click', function() 
     window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/Folders/DBAFvol2.html';
 });
 
-document.getElementById('read-more-btn-3').addEventListener('click', function() {
-    window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/Folders/DBAFvol3.html';
-});
-
 // Correzione: aggiunta selezione corretta per menu-btn1
 document.getElementById('menu-btn1').addEventListener('click', () => {
-    window.location.href = 'https://google.com';
+    window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/'; // Cambia il link con il percorso corretto
 });
 
-document.getElementById('menu-btn1').addEventListener('click', function() {
-    window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/index.html';
+document.getElementById('menu-btn2').addEventListener('click', () => {
+    window.location.href = '/about.html'; // Cambia il link con il percorso corretto
 });
 
-document.getElementById('menu-btn3').addEventListener('click', function() {
-    window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/Base-html%20archive/index-base.html';
+document.getElementById('menu-btn3').addEventListener('click', () => {
+    window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/Base-html%20archive/index-base.html'; // Cambia il link con il percorso corretto
+});
+
+document.getElementById('menu-btn4').addEventListener('click', () => {
+    window.location.href = '/contact.html'; // Cambia il link con il percorso corretto
 });
