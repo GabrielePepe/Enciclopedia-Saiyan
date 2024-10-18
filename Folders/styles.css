@@ -6,11 +6,11 @@ html, body {
     font-family: Poppins, Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    box-sizing: border-box; /* Assicura il corretto calcolo delle dimensioni */
+    box-sizing: border-box;
 }
 
 * {
-    box-sizing: inherit; /* Include box-sizing in tutti gli elementi */
+    box-sizing: inherit;
 }
 
 body {
@@ -36,7 +36,7 @@ header {
 main {
     flex-grow: 1;
     padding: 20px;
-    margin-bottom: 40px; /* Aggiunge spazio per il footer */
+    margin-bottom: 40px;
 }
 
 .content-container {
@@ -101,9 +101,9 @@ main {
 
 .card-container {
     display: flex;
-    flex-wrap: wrap; /* Permette di andare a capo con le card */
-    justify-content: space-between; /* Spaziatura tra le card */
-    margin-top: 20px; /* Margine superiore per separare dalle altre sezioni */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .card {
@@ -111,11 +111,11 @@ main {
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: calc(33.33% - 20px); /* Cambia la larghezza per essere più flessibile */
-    max-width: 220px; /* Leggermente più larga */
-    height: auto; /* Rimuove l'altezza fissa */
+    width: calc(33.33% - 20px);
+    max-width: 220px;
+    height: auto;
     transition: transform 0.2s;
-    margin: 10px; /* Spazio attorno a ciascuna card */
+    margin: 10px;
 }
 
 .card:hover {
@@ -123,7 +123,7 @@ main {
 }
 
 .card img {
-    width: 80%; /* Immagine a larghezza dell'80% */
+    width: 80%;
     height: auto;
     margin: 0 auto;
     display: block;
@@ -198,13 +198,13 @@ button:hover {
 }
 
 .menu-btn1, .menu-btn2, .menu-btn3, .menu-btn4 {
-    width: 250px; /* Pulsanti più grandi */
+    width: 250px;
     padding: 20px;
-    font-size: 20px; /* Dimensione testo pulsanti aumentata */
+    font-size: 20px;
     background-color: #ff9200;
     color: white;
     border: none;
-    border-radius: 30px; /* Pulsanti più stondati */
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
@@ -218,18 +218,18 @@ button:hover {
 .close-btn {
     position: absolute;
     top: 20px;
-    right: 15px; /* Allineata completamente a destra */
+    right: 15px;
     font-size: 40px;
-    color: #ffffff; /* Colore visibile */
+    color: #ffffff;
     background: none;
     border: none;
     cursor: pointer;
-    outline: none; /* Rimuove l'highlight */
-    z-index: 1001; /* Resta sempre visibile */
+    outline: none;
+    z-index: 1001;
 }
 
 .close-btn:focus {
-    outline: none; /* Assicura che l'highlight sia rimosso anche dopo il click */
+    outline: none;
 }
 
 /* --- FOOTER --- */
@@ -238,8 +238,8 @@ footer {
     background-color: #ff9200;
     color: white;
     width: 100%;
-    margin-top: auto; /* Spinge il footer in fondo */
-    flex-shrink: 0; /* Previene il footer di comprimersi */
+    margin-top: auto;
+    flex-shrink: 0;
 }
 
 .footer-container {
@@ -259,65 +259,64 @@ footer {
 }
 
 .footer-logo, .footer-collab-logo {
-    width: 10%; /* Aumentiamo la dimensione dell'immagine */
-    height: 10%; /* Assicuriamo che sia ben visibile */
-    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%; /* Manteniamo il border-radius */
-    object-fit: cover; /* Manteniamo l'immagine centrata e riempita */
+    width: 10%;
+    height: 10%;
+    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%;
+    object-fit: cover;
 }
 
 /* Media Queries */
 @media (max-width: 1200px) {
     .card {
-        width: calc(33.33% - 20px); /* Le card occupano il 33% su schermi più piccoli */
+        width: calc(33.33% - 20px);
     }
 }
 
 @media (max-width: 768px) {
     .header-image {
-        max-width: 50%;  /* Riduci la larghezza del logo su tablet */
+        max-width: 50%;
     }
 
     main {
-        justify-content: center; /* Mantieni gli elementi centrati */
-        gap: 10px; /* Riduci il gap tra le card */
+        justify-content: center;
+        gap: 10px;
     }
 
     .card {
-        width: calc(50% - 10px); /* Le card occupano il 50% della larghezza su tablet */
+        width: calc(50% - 10px);
     }
 
     .content-container {
-        flex-direction: column; /* Cambia layout a colonna per schermi più piccoli */
-        align-items: center; /* Centra il contenuto */
+        flex-direction: column;
+        align-items: center;
     }
 
     .image-container {
-        margin-right: 0; /* Rimuove margine su schermi più piccoli */
-        margin-bottom: 20px; /* Aggiungi margine sotto l'immagine */
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     .close-btn {
         top: 20px;
         right: 10px;
-        transform: none; /* Rimuove la trasformazione */
     }
 }
 
 @media (max-width: 480px) {
     .header-image {
-        max-width: 70%;  /* Riduci la larghezza del logo su mobile */
+        max-width: 70%;
     }
 
     .card {
-        width: 100%; /* Le card occupano l'intera larghezza su schermi piccoli */
+        width: 100%;
     }
 
     .card img {
-        width: 100%; /* Immagine a larghezza piena nelle card su mobile */
+        width: 100%;
     }
 
     .card-content {
-        padding: 10px; /* Riduce il padding */
+        padding: 10px;
     }
 
     .footer-container {
@@ -326,16 +325,15 @@ footer {
     }
 
     .footer-collab-logo, .footer-logo {
-        width: 50%; /* Aumentiamo la dimensione per una migliore visibilità su mobile */
+        width: 50%;
         height: 50%;
     }
 
     .close-btn {
         width: 60px;
         height: 60px;
-        font-size: 30px; /* Leggermente più piccola su dispositivi piccoli */
+        font-size: 30px;
         top: 15px;
-        right: 10px; /* Margine destro ridotto per schermi piccoli */
-        transform: none; /* Rimuove la trasformazione */
+        right: 10px;
     }
 }
