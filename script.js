@@ -32,7 +32,7 @@ document.getElementById('menu-btn1').addEventListener('click', () => {
 });
 
 document.getElementById('menu-btn2').addEventListener('click', () => {
-    window.location.href = '/about.html'; // Cambia il link con il percorso corretto
+    window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/Chi%20siamo/chi-siamo.html'; // Cambia il link con il percorso corretto
 });
 
 document.getElementById('menu-btn3').addEventListener('click', () => {
