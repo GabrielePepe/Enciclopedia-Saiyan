@@ -40,5 +40,5 @@ document.getElementById('menu-btn3').addEventListener('click', () => {
 });
 
 document.getElementById('menu-btn4').addEventListener('click', () => {
-    window.location.href = '/contact.html'; // Cambia il link con il percorso corretto
+    window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/Chi%20siamo/contact.html'; // Cambia il link con il percorso corretto
 });
