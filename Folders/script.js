@@ -16,18 +16,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Menu navigation buttons
     document.getElementById('menu-btn1').addEventListener('click', () => {
-        window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/'; // Cambia il link con il percorso corretto
+        window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/';
     });
 
     document.getElementById('menu-btn2').addEventListener('click', () => {
-        window.location.href = '/about.html'; // Cambia il link con il percorso corretto
+        window.location.href = '/about.html';
     });
 
     document.getElementById('menu-btn3').addEventListener('click', () => {
-        window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/Base-html%20archive/index-base.html'; // Cambia il link con il percorso corretto
+        window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/Base-html%20archive/index-base.html';
     });
 
     document.getElementById('menu-btn4').addEventListener('click', () => {
-        window.location.href = '/contact.html'; // Cambia il link con il percorso corretto
+        window.location.href = '/contact.html';
     });
 });
