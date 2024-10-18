@@ -36,7 +36,7 @@ document.getElementById('menu-btn2').addEventListener('click', () => {
 });
 
 document.getElementById('menu-btn3').addEventListener('click', () => {
-    window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/Base-htmlarchive/index-base.html'; // Cambia il link con il percorso corretto
+    window.location.href = 'https://gabrielepepe.github.io/Enciclopedia-Saiyan/Base-html archive/index-base.html'; // Cambia il link con il percorso corretto
 });
 
 document.getElementById('menu-btn4').addEventListener('click', () => {
