@@ -6,14 +6,22 @@
     <title>Enciclopedia Saiyan</title>
     <link rel="icon" href="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .footer-logo {
+            width: 50px;
+            height: 50px;
+        }
+        .footer-collab-logo {
+            width: auto;
+            height: 50px;
+        }
+    </style>
 </head>
 <body>
-
     <!-- Pulsante del menù (con icona) -->
     <div class="menu-icon" id="menu-icon">
         &#9776; <!-- Icona del menù (hamburger) -->
     </div>
-
     <!-- Menù fullscreen nascosto inizialmente -->
     <div class="fullscreen-menu" id="fullscreen-menu">
         <button class="close-btn" id="close-btn">&times;</button>
@@ -24,12 +32,10 @@
             <button class="menu-btn4" id="menu-btn4">Contattaci</button>
         </div>
     </div>
-
     <div class="main-content">
         <header>
             <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/title.png" alt="Logo" class="header-image">
         </header>
-
         <main class="grid-container">
             <div class="card">
                 <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/000.jpg" alt="Copertina Rivista 1">
@@ -39,7 +45,6 @@
                     <button id="read-more-btn">Leggi di più</button>
                 </div>
             </div>
-            
             <div class="card">
                 <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/001.png" alt="Copertina Rivista 1">
                 <div class="card-content">
@@ -48,28 +53,31 @@
                     <button id="read-more-btn-2">Leggi di più</button>
                 </div>
             </div>
-
             <div class="card">
                 <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/002.jpg" alt="Copertina Rivista 1">
-                <div class="card-content"> 
+                <div class="card-content">
                     <h2>Dragon Ball Bardack After</h2>
                     <p class="subtitle">Young Jijii</p>
                     <button id="read-more-btn-3">Leggi di più</button>
                 </div>
             </div>
         </main>
-
         <footer>
             <div class="footer-container">
                 <div class="collaboration">
                     <h2>2024 - In collaborazione con: Mirai Channel95</h2>
-                    <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/footer.png" alt="Collaborazione" class="footer-collab-logo">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Collaborazione" class="footer-collab-logo">
+                        <img src="https://gabrielepepe.github.io/Enciclopedia-Saiyan/Assets/footer.png" alt="Collaborazione" class="footer-collab-logo">
+                    </a>
+                    <a href="https://www.instagram.com/miraichannel95/?hl=it" target="_blank"> <!-- Link per il logo Instagram -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Collaborazione" class="footer-logo">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCWAyK5s8YoBDaSSoWg7cJ-w" target="_blank"> <!-- Link per il logo YouTube -->
+                        <img src="https://1.bp.blogspot.com/-zaoiLHspoKI/XeI_0uFAeCI/AAAAAAAAF38/CyHgdY8bdOQ7d979yOJ0voSIA8b5bAF2wCLcBGAsYHQ/s1600/Youtube-Icon-2000x2000.png" alt="Collaborazione" class="footer-logo">
+                    </a>
                 </div>
             </div>
         </footer>
     </div>
-    
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
 </body>
 </html>
