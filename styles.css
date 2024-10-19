@@ -131,11 +131,11 @@ footer {
     justify-content: center;
 }
 
-.footer-logo, .footer-collab-logo {
-    width: 10%; /* Aumentiamo la dimensione dell'immagine */
-    height: 10%; /* Assicuriamo che sia ben visibile */
-    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%; /* Manteniamo il border-radius */
-    object-fit: cover; /* Manteniamo l'immagine centrata e riempita */
+.footer-collab-logo, .footer-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 10% 50% 10% 50% / 50% 10% 50% 10%;
+    object-fit: cover;
 }
 
 /* Stili del menù a schermo intero */
@@ -216,11 +216,9 @@ footer {
     .header-image {
         max-width: 50%;
     }
-
     .card {
         width: calc(50% - 10px);
     }
-
     .close-btn {
         top: 20px;
         right: 10px;
@@ -232,35 +230,40 @@ footer {
     .header-image {
         max-width: 70%;
     }
-
     .card {
-        width: 100%;
+        width: calc(50% - 10px); /* 2 card per riga */
     }
-
     .card img {
         width: 100%;
     }
-
     .card-content {
         padding: 15px;
     }
-
     button {
         width: 100%; /* Assicuriamo che il pulsante occupi tutta la larghezza */
         padding: 15px; /* Aumentiamo il padding per rendere il pulsante più grande */
         font-size: 1rem; /* Aumentiamo la dimensione del font per il pulsante */
     }
-
     .footer-container {
         flex-direction: column;
         gap: 10px;
     }
-
-    .footer-collab-logo, .footer-logo {
-        width: 50%; /* Aumentiamo la dimensione per una migliore visibilità su mobile */
-        height: 50%;
+    .collaboration {
+        flex-direction: column;
+        text-align: center;
     }
-
+    .footer-collab-logo {
+        margin-bottom: 10px; /* Spazio tra il logo di collaborazione e i social */
+    }
+    .social-logos {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* Spazio tra i loghi di Instagram e YouTube */
+    }
+    .footer-logo {
+        width: 50px;
+        height: 50px;
+    }
     .close-btn {
         width: 60px;
         height: 60px;
